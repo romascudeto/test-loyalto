@@ -21,6 +21,9 @@ while (!$done) {
     echo "\n\n";
 }
 
+// choose the winner
+$winner = chooseWinner($players);
+echo "The Winner is : " . $winner . "\n";
 
 function generateDice($n, $m, &$players)
 {
@@ -74,7 +77,7 @@ function evaluateGame(&$players)
 
         // check if the next player is not at the end of array
         if ($nextPlayer  < count($players)) {
-            
+
             // Loop for get next player who still playing
             for ($count = $nextPlayer; $count < count($players); $count++) {
                 if (count($players['player_' . $count]['dice']) > 0) {
@@ -96,7 +99,7 @@ function evaluateGame(&$players)
     // Check if end game
     $countEndPlayer = 0;
     for ($i = 0; $i < count($players); $i++) {
-        if (count($players['player_'.$i]['dice']) == 0) {
+        if (count($players['player_' . $i]['dice']) == 0) {
             $countEndPlayer++;
         }
     }
@@ -105,4 +108,18 @@ function evaluateGame(&$players)
         return true;
     }
     return false;
+}
+
+function chooseWinner($players)
+{
+
+    // get the highest point 
+    $highestScore = max(array_column($players, 'score'));
+    $winnerString = '';
+    foreach ($players as $key => $player) {
+        if ($player['score'] == $highestScore) {
+            $winnerString = $winnerString . " " . $key;
+        }
+    }
+    return $winnerString . "  with " . $highestScore . " points";
 }
