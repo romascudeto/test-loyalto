@@ -1,7 +1,7 @@
 # Soal 1
 
 ## Flow  
-Untuk flow bisnis dari aplikasi restoran ini adalah dengan menyediakan smartphone pada masing - masing table (meja) tempat customer makan. dan aplikasi restoran ini sudah terhubung dengan bagian aplikasi di dapur.  
+Untuk flow bisnis dari aplikasi restoran ini adalah dengan menyediakan smartphone pada masing - masing table (meja) tempat customer makan atau customer dapat mengunduh dan menggunakan smartphone pribadi (berkaitan dengan pembayaran). dan aplikasi restoran ini sudah terhubung dengan bagian aplikasi di dapur.  
 - Customer memesan makanan. Order Status : booking
 - Chef membuat masakan. Order Status : processed
 - Chef selesai memasak dan waiter mengantar ke customer, jika pesanan lengkap status menjadi selesai / done. Order Status : done
@@ -39,11 +39,10 @@ Table untuk detail transaksi dari order berupa list menu yang di pesan oleh cust
 
 ## Skema Teknologi  
 
-![alt text](https://github.com/romascudeto/test-loyalto/blob/master/service-management-diagram.png)
+![alt text](https://github.com/romascudeto/test-loyalto/blob/master/service-architecture.png)
 
 ### Backend  
 Golang : karena golang memiliki beberapan keunggulan seperti maintainable, testable, mendukung konkurensi di level bahasa dengan pengaplikasian cukup mudah, mendukung pemrosesan data dengan banyak prosesor dalam waktu yang bersamaan, memiliki garbage collector dan proses kompilasi sangat cepat
-
 
 ### Frontend (Mobile Apps)  
 Android / Kotlin : karena android sebagai os yang paling banyak digunakan dan juga untuk gadget yang tersedia sangat beragam variasi dan harganya.
