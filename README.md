@@ -10,7 +10,7 @@ Untuk flow bisnis dari aplikasi restoran ini adalah dengan menyediakan smartphon
 
 ## Skema Database 
 
-![alt text](https://github.com/romascudeto/test-loyalto/blob/master/db-loyalto.png)
+![alt text](https://github.com/romascudeto/test-loyalto/blob/master/loyalto.png)
 
 Keterangan :  
 ### m_category_menu  
