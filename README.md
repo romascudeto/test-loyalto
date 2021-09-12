@@ -6,7 +6,7 @@ Untuk flow bisnis dari aplikasi restoran ini adalah dengan menyediakan smartphon
 - Chef membuat masakan. Order Status : processed
 - Chef selesai memasak dan waiter mengantar ke customer, jika pesanan lengkap status menjadi selesai / done. Order Status : done
 - Jika ada penambahan menu maka customer mengupdate melalui aplikasi menu yang ingin ditambah. Maka flow kembali dari step awal
-- Setelah selesai maka customer dapat membayar dengan berbagai macam metode pembayaran
+- Setelah selesai maka customer dapat membayar dengan berbagai macam metode pembayaran melalui aplikasinya langsung tanpa perlu berinteraksi dengan kasir
 
 ## Skema Database 
 
