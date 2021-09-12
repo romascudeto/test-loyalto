@@ -39,6 +39,16 @@ Table untuk detail transaksi dari order berupa list menu yang di pesan oleh cust
 
 ## Skema Teknologi  
 
+![alt text](https://github.com/romascudeto/test-loyalto/blob/master/service-management-diagram.png)
 
+### Backend  
+Golang : karena golang memiliki beberapan keunggulan seperti maintainable, testable, mendukung konkurensi di level bahasa dengan pengaplikasian cukup mudah, mendukung pemrosesan data dengan banyak prosesor dalam waktu yang bersamaan, memiliki garbage collector dan proses kompilasi sangat cepat
+
+
+### Frontend (Mobile Apps)  
+Android / Kotlin : karena android sebagai os yang paling banyak digunakan dan juga untuk gadget yang tersedia sangat beragam variasi dan harganya.
+
+### Database
+MySQL : untuk level penggunaan yang tidak terlalu tinggi, mysql masih menjadi pilihan baik. karena mudah digunakan dan banyak diskusi dan resource yang bisa membantu dalam pengembangan aplikasi
 
 
